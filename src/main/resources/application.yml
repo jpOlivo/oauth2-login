@@ -4,17 +4,17 @@ spring:
       client:
         registration:
           github:
-            clientId: ""
-            clientSecret: ""
+            clientId: "your client id"
+            clientSecret: "your client secret"
           okta:
-            client-id: ""
-            client-secret: ""
+            client-id: "your client id"
+            client-secret: "your client secret"
         provider:
           okta:
-            authorization-uri: ""
-            token-uri: ""
-            user-info-uri: ""
-            jwk-set-uri: ""
+            authorization-uri: https://yourdomain.okta.com/oauth2/default/v1/authorize
+            token-uri: https://yourdomain.okta.com/oauth2/default/v1/token
+            user-info-uri: https://yourdomain.okta.com/oauth2/default/v1/userinfo
+            jwk-set-uri: https://yourdomain.okta.com/oauth2/default/v1/keys
             
 
 logging:
